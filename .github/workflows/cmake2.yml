@@ -39,9 +39,9 @@ jobs:
       with:
        name: my-artifact
        path:  |
-        \library\Debug\
-        \library\Debug\*.dll
-        \library\Debug\*.lib
+        ${{github.workspace}}/build\library\Debug\
+        ${{github.workspace}}/build\library\Debug\*.dll
+        ${{github.workspace}}/build\library\Debug\*.lib
     
     - name: GH Release
       uses: softprops/action-gh-release@v1

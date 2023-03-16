@@ -170,7 +170,7 @@ endif()
 
 if(MSVC)
 	if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++17 /Od /DEBUG /Zi /sdl /MP /DFD_SETSIZE=1024 /Zc:preprocessor")
+		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++17 /Od /DEBUG /bigobj /Zi /sdl /MP /DFD_SETSIZE=1024 /Zc:preprocessor")
 	else()
 		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /std:c++17 /O2 /Oi /Oy /GL /Gy /sdl /MP /DFD_SETSIZE=1024 /Zc:preprocessor")
 	endif()

@@ -38,7 +38,9 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
        name: my-artifact
-       path: /DPP/DPP/build/library/Debug/
+       path:  |
+        *.dll
+        *.lib
     
     - name: GH Release
       uses: softprops/action-gh-release@v1
